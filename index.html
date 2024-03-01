@@ -342,11 +342,9 @@ pre {
 <script type="text/javascript" src="../js/hidebib.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
     <head>
-        <title> LOSS-SLAM: Lightweight Open-Set Semantic <br>
-            Simultaneous Localization and Mapping</title>
+        <title> Opti-Acoustic Semantic SLAM for Underwater Environments</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:description" content="LOSS SLAM: Lightweight Open-Set Semantic <br>
-        Simultaneous Localization and Mapping"/>
+        <meta property="og:description" content="Opti-Acoustic Semantic SLAM for Underwater Environments"/>
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     </head>
 
@@ -359,83 +357,42 @@ pre {
 <div class="container">
     <div class="paper-title">
     <h1> 
-        <font color="#5364cc">LOSS-SLAM</font>: 
-        <font color="#5364cc">L</font>ightweight <font color="#5364cc">O</font>pen-<font color="#5364cc">S</font>et <font color="#5364cc">S</font>emantic <br>
-        <font color="#5364cc">S</font>imultaneous <font color="#5364cc">L</font>ocalization <font color="#5364cc">a</font>nd <font color="#5364cc">M</font>apping</h1>
+        Opti-Acoustic Semantic SLAM for Underwater Environments     
+    </h1>
     </div>
 
     <div id="authors">
         <center>
             <div class="author-row-new">
                 <a href="https://www.linkedin.com/in/kurran-singh/">Kurran Singh</a>,
-                <a href="https://www.linkedin.com/in/timmagoun">Tim Magoun</a>,
-                <a href="https://www.csail.mit.edu/person/john-leonard">John Leonard</a>
+                <a href="https://jungseokhong.com/">Jungseok Hong</a>,
+                <a href="https://nrr.mit.edu/about">Nicholas R. Rypkema </a>
+                <a href="https://meche.mit.edu/people/faculty/JLEONARD@MIT.EDU">John J. Leonard</a>"
             </div>
         </center>
         <center>
             <div class="affiliations">
-                <span>MIT CSAIL</span><br/>
-                {singhk,magoun,jleonard}@mit.edu
+                <span>MIT CSAIL, WHOI</span><br/>
+                {singhk,jungseok,jleonard}@mit.edu, nrypkema@whoi.edu
             </div>
         </center>
 
         <div style="clear: both">
             <div class="paper-btn-parent">
-            <a class="paper-btn" href="https://arxiv.org/abs/2210.06978">
+            <a class="paper-btn" href="">
                 <span class="material-icons"> description </span> 
                  Paper
             </a>
             <div class="paper-btn-coming-soon">
-                <a class="paper-btn" href="https://github.com/kurransingh/loss-slam">
-                    <span class="material-icons"> code </span>
-                    Code
-                </a>
-            </div>
-            <div class="paper-btn-coming-soon">
-                <a class="paper-btn" href="https://www.dropbox.com/sh/vqdwafwwjwmybgg/AADJRTwnxJWpcGi_aVCPVfgka?dl=0">
+                <a class="paper-btn" href=""">
                     <span class="material-icons"> folder </span>
                     Data
                 </a>
             </div>
         </div></div>
     </div>
+
     <!-- <style>
-        #teaser-image {
-            display: flex;
-            justify-content: center;
-        }
-
-        #teaser-image .video-container {
-            max-width: 100%; /* Set maximum width to 100% of the viewport */
-            margin: 10 10px; /* Adjust margin as needed */
-            width: 1600%; /* Set width to 25% to fit three videos side by side */
-        }
-
-        #teaser-image .video-background {
-            width: 100%;
-        }
-    </style>
-    <section id="teaser-image">
-        <figure class="video-container">
-            <video class="left" autoplay loop muted playsinline class="video-background">
-                <source src="assets/loss_slam_closed_clipped.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </figure>
-        <figure class="video-container">
-            <video class="center" autoplay loop muted playsinline class="video-background">
-                <source src="assets/geometric_clipped.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </figure>
-        <figure class="video-container">
-            <video class="right" autoplay loop muted playsinline class="video-background">
-                <source src="assets/open_set_trimmed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </figure>
-    </section> -->
-    <style>
         .video-container {
           width: 100%; /* Each video takes up 1/3 of the container width */
           float: left; /* Float videos left to display them horizontally */
@@ -449,35 +406,32 @@ pre {
         }
       </style>
 
-      <!-- <div class="video-container">
-        <video autoplay loop muted>
-          <source src="assets/loss_slam_closed_clipped.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      
-      <div class="video-container">
-        <video autoplay loop muted>
-          <source src="assets/geometric_clipped.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-       -->
+
       <div class="video-container">
         <video autoplay loop muted>
           <source src="assets/open_set_trimmed.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-      
-
+       -->
+    <center>
+    <figure style="width: 100%;">
+            <a>
+                <img width="80%" src="assets/map_with_real_image.png"> 
+            </a>
+            <p class="caption" style="margin-bottom: 24px;"><br>
+                The upper portion of the image illustrates an underwater vehicle navigating through an underwater environment where various objects are placed.
+                The trajectory map below shows the estimated trajectory of the vehicle and the location of objects encountered during the mission. The colors are randomly
+                assigned based on semantics. Black lines represent correct matches, a red dashed line shows false positives due to an error from feature embedding, and
+                a cyan dashed line is a misaligned object match in the map due to an error from range values from the sonar sensor.
+            </p>
+    </figure>
+    </center>
     <section id="news">
         <hr>
         <h2>News</h2>
         <div class="row">
-            <div><span class="material-icons"> event </span> [February 2024] <a href="https://kurransingh.github.io/open-set-slam/">Project page</a> released!</div>
-            <div><span class="material-icons"> event </span> [February 2024] <a href="https://www.dropbox.com/sh/vqdwafwwjwmybgg/AADJRTwnxJWpcGi_aVCPVfgka?dl=0">Data</a> released!</div>
-
+            <div><span class="material-icons"> event </span> [March 2024] <a href="https://kurransingh.github.io/underwater-semantic-slam/">Project page</a> released!</div>
         </div>
     </section>
     <section id="abstract"/>
@@ -485,27 +439,32 @@ pre {
         <h2>Abstract</h2>
         <div class="flex-row">
             <p>
-                Enabling robots to understand the world in terms
-                of objects is a critical building block towards higher level
-                autonomy. The success of foundation models in vision has
-                created the ability to segment and identify nearly all objects
-                in the world. However, utilizing such objects to localize the
-                robot and build an open-set semantic map of the world remains
-                an open research question. In this work, a system of identi-
-                fying, localizing, and encoding objects is tightly coupled with
-                probabilistic graphical models for performing open-set semantic
-                simultaneous localization and mapping (SLAM). Results are
-                presented demonstrating that the proposed lightweight object
-                encoding can be used to perform more accurate object-based
-                SLAM than existing open-set methods, closed-set methods,
-                and geometric methods while incurring smaller computational
-                overhead than existing open-set mapping methods.
+                Despite recent advances in semantic Simultaneous
+                Localization and Mapping (SLAM) for terrestrial and aerial
+                applications, underwater semantic SLAM remains an open and
+                largely unaddressed research problem due to the unique sensing
+                modalities and the differing object classes. This paper presents
+                a semantic SLAM method for underwater environments that
+                can identify, localize, classify, and map a wide variety of
+                marine objects without a priori knowledge of the scene’s
+                object makeup. The method performs unsupervised object
+                segmentation and object-level feature aggregation, and then
+                uses opti-acoustic sensor fusion for object localization with
+                probabilistic data association and graphical models for back-
+                end inference. Indoor and outdoor underwater datasets with a
+                wide variety of objects and challenging acoustic and lighting
+                conditions are collected for evaluation. The datasets are made
+                publicly available. Quantitative and qualitative results show the
+                proposed method achieves reduced trajectory error compared
+                to baseline methods, and is also able to obtain comparable map
+                accuracy to a baseline closed-set method that requires hand-
+                labeled data of all objects in the scene.
             </p>
         </div>
         <br>
 
     <center>
-        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/cap-QvtrYF8?si=m5Gsddmk23s6zqbA" title="YouTube video player"
+        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/FpvOt5NWlos?si=I8Y5_I8p_8qXMkDs" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
@@ -518,23 +477,14 @@ pre {
         <center>
             <figure style="width: 100%;">
                     <a>
-                        <img width="80%" src="assets/icra24_sys_diagram.png"> 
+                        <img width="80%" src="assets/sys_diagram.png"> 
                     </a>
                     <p class="caption" style="margin-bottom: 24px;"><br>
-                        An overview of the proposed open-set data association system
-                        coupled with a factor graph framework when a new image and odometry
-                        pair is received. The image is fed into the DINO network to get patch-
-                        level encodings, which are then clustered into objects. Those clusters are
-                        determined to be either foreground or background based on the attention
-                        heads. A connected component analysis yields instance level segmentations,
-                        from which for each object, a single encoding vector is used as the object
-                        representation. The encoding is compared against the existing landmarks’
-                        encodings to determine class matches. The pose of the object is also
-                        compared against the existing objects’ poses as the final data association
-                        filter (not pictured). After building a factor with all matches that pass the
-                        filter (depending on backend method, either expectation-maximization, max-
-                        mixtures, or max-likelihood factor), we add a new pose (light blue) to the
-                        factor graph with a factor connecting it (light pink) to the previous landmark.
+                        The pipeline receives sensor inputs from a multibeam sonar, a monocular camera, an IMU, a DVL, and a pressure sensor. (1) Segment objects from
+                        optical images and extract features for each segmentation mask. Features are projected into a fixed dimension for the data association process. (2) Given
+                        the segmentation mask, its pixel centroid is used to find a corresponding range from sonar returns and estimate a 3D position of the object. (3) In parallel,
+                        sensor readings from IMU, DVL, and pressure sensor are used to estimate odometry. Outputs from (1)-(3) are used to build a factor graph and optimize
+                        it via iSAM2 to obtain map and trajectory estimates.
                     </p>
             </figure>
 
@@ -545,16 +495,15 @@ pre {
         <div class="flex-row">
             <div class="download-thumb">
             <div style="box-sizing: border-box; padding: 16px; margin: auto;">
-                <a href="https://kurransingh.github.io/open-set-slam/"><img class="screenshot" src="assets/title_page_pic.png"></a>
+                <a href="https://kurransingh.github.io/underwater-semantic-slam/"><img class="screenshot" src="assets/title_page_pic.png"></a>
             </div>
         </div>
             <div class="paper-stuff">
                 <p><b>LOSS-SLAM: Lightweight Open-Set Semantic Simultaneous Localization and Mapping</b></p>
                 <p>Kurran Singh, Tim Magoun, John Leonard</p>
-                <!-- <p><i>Advances in Neural Information Processing Systems (NeurIPS), 2022 <b></b></i></p>  -->
                 <div><span class="material-icons"> description </span><a href=""> arXiv version</a></div>
-                <div><span class="material-icons"> insert_comment </span><a href="assets/singh2024opensetslam.bib"> BibTeX</a></div>
-                <div><span class="material-icons"> integration_instructions </span><a href="https://github.com/kurransingh/loss-slam"> Code</a></div>
+                <div><span class="material-icons"> insert_comment </span><a href="assets/singh2024optiacousticslam.bib"> BibTeX</a></div>
+                <div><span class="material-icons"> integration_instructions </span><a href=""> Data</a></div>
             </div>
             </div>
         </div>
@@ -564,8 +513,8 @@ pre {
         <h2>Citation</h2>
         <hr>
         <pre><code>@inproceedings{singh2024opensetslam,
-    title=LOSS-SLAM: Lightweight Open-Set Semantic Simultaneous Localization and Mapping,
-    author={Kurran Singh and Tim Magoun and John Leonard},
+    title=Opti-Acoustic Semantic SLAM for Underwater Environments,
+    author={Kurran Singh and Jungseok Hong and Nicholas R. Rypkema and John J. Leonard},
     booktitle={arxiv Preprint},
     year={2024}
 }</code></pre>
